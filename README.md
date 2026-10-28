@@ -1,5 +1,7 @@
 # When does early elimination waste a tuning budget?
 
+[Research manuscript: PDF and LaTeX](paper/README.md)
+
 **This cold-fit halving schedule did not earn a consistent accuracy or elapsed-time advantage over a smaller full-budget random search.** On two held datasets, it wins three of six split comparisons each, with ties and losses retained. Only 4/24 finite-pool validation winners survive both pruning stages. The useful decision is to validate the early ranking and actual compute cost before adopting the scheduler.
 
 This is original, reproducible experimental code on four exact public benchmark versions, with every trial, prediction, resource ledger and independent MSE check available. Random search and successive halving are established methods; no new optimizer, universal winner or deployment-impact claim is made.
@@ -79,4 +81,4 @@ Independent code imports none of the experiment's metric helpers. It checks 1,56
 
 ## Next useful experiment
 
-Test an altered first-stage resource allowance, a wall-time stopping rule or a warm-start implementation under a new frozen protocol and new evaluation data. This experiment does not show which would work. Keep the full-budget random baseline, check whether early ranking is informative on the actual workload, and charge the extra validation audit to the research budget. A private LaTeX/PDF manuscript explains the study; drafts, source papers, raw files and credentials are excluded from GitHub.
+Test an altered first-stage resource allowance, a wall-time stopping rule or a warm-start implementation under a new frozen protocol and new evaluation data. This experiment does not show which would work. Keep the full-budget random baseline, check whether early ranking is informative on the actual workload, and charge the extra validation audit to the research budget. The independent research manuscript is available in [PDF and LaTeX](paper/README.md); source papers, excluded raw files and credentials remain outside GitHub.

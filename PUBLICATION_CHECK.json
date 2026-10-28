@@ -1,18 +1,18 @@
 {
-  "timestamp_utc": "2026-10-28T20:45:10.150665+00:00",
+  "timestamp_utc": "2026-10-28T22:48:22.231879+00:00",
   "status": "PASS_BOUNDED_SCAN",
-  "files_checked": 213,
-  "scope": "Intended tracked/nonignored files; decompressed text; forbidden paths/extensions, high-confidence key and private machine path patterns; local Markdown links. Image/PDF contents require separate visual/source review. This is not universal secret detection.",
+  "files_checked": 221,
+  "scope": "Exact staged Git index bytes; decompressed text; forbidden paths/extensions, high-confidence key and private machine path patterns; local Markdown links. Image/PDF contents require separate visual/source review. This is not universal secret detection.",
   "findings": [],
   "sha256": {
-    ".gitattributes": "7b7305ca5f516c4eae527fc63d0299aed161515bf0099d8c9602264c4a129e7e",
+    ".gitattributes": "e35dfdaa8313ae6acc0bca660ec767ea1997c135cbd284b55c99232440096792",
     ".github/workflows/verify.yml": "17cf8b0c128b80b2b719dc502b226f992f3be8277bd847e83709dfe7fe5ac5c4",
-    ".gitignore": "1f02870e2b18877190ad014bfca16da58329b90a8b707f57a9e1014b6c6db93f",
-    "CODE_STYLE_CHECK.json": "d5abc5d40b7a50e66b5b823cc4afd45b81af88bff774e0afa0665bef758911ff",
-    "MODEL_VALIDATION_STANDARD.md": "23f24302cefcf1ddf374c03236ce5ffc85943fdaece43f58826ddfe5b0edf8a4",
+    ".gitignore": "c38d414403306bc91f256d0257cf31e8921e72f163c60b3c18db12d2327400da",
+    "CODE_STYLE_CHECK.json": "2655fd7cbf903070b4d935f420d84ab667534b0ff66446154df5bc61aaa8dc59",
+    "MODEL_VALIDATION_STANDARD.md": "40f9cab5117e572ed4727620e8952269c40e3118c117d6c0ea438aead3195c01",
     "PROTOCOL.md": "a4e0536fcf89883bd7c7106231fbe774e2f35fa99de182b18d06ee51d73be40c",
-    "README.md": "bcae18bab28649711c192a372841f1b99a903018fac844e43722e134dd5d0142",
-    "SOURCES.md": "f1aa9cd8241329eee3f84b8d827ade1cb3dc219e2fd238bbb41ceabfbc909218",
+    "README.md": "fb907c10de62953dabe9ee1b7869076f589ef875a9917bdd3d598d717da875b1",
+    "SOURCES.md": "58242e662cab158762c04aa709da316cbe58dff859586a402a58a7cbebdc4865",
     "data/manifest.json": "d1ab0cd915223775172d4587514ca9f735cf2083af4512904c52ff7d23c3f631",
     "data/metadata/44140.json": "2b2f33cfeb556315644ec5feabb5313c0bb0a6eaac2782ddc2a64b9befc9becc",
     "data/metadata/44144.json": "4a1fafe4daa0af636153abeb7a8c77fdd2454806463c0bb88bd5ac0659100a5b",
@@ -28,7 +28,15 @@
     "figures/paired-test-loss.png": "7ba8fce857fa620254141413a7506a9741862a6b1c61a648c7724ab8206d8ba4",
     "figures/resource-accounting.pdf": "6aa40a3a9a7665fe5a0b11497774563b98cd176ee25b290c51987bc7b7d62c2e",
     "figures/resource-accounting.png": "eec52fb063dcdec4f455762c08a69a83d010e38bbcf85ddaa588578a826d6e1d",
-    "requirements.txt": "ec6ef82c06f0bf2cb5f93a044188063e1405e17e488de59c0573ef79c5302cc3",
+    "paper/PUBLICATION_SCOPE.json": "a7365c9d6ce950a6fa8febb7f8ca31e11e69ad3951d89f663f3f263028127024",
+    "paper/README.md": "f6d1434988c3b1ad045fd2a160abfd2eafb8fcdb2b0b2e6784ed4210265509b1",
+    "paper/REVIEW.json": "ef05862f00fdd3733591402200f030021b5d7c8e72c5eb0c7aacfdbd1cae3c21",
+    "paper/images/early-elimination-audit.pdf": "b34de2dff7d3dbcd9c67c4e89190a33ceb99263070653bbde9063218f7ec12e8",
+    "paper/images/paired-test-loss.pdf": "617805f884eeab66ed2f53456beeaad7c78e3f8ce416608de9220f7026c84b07",
+    "paper/images/resource-accounting.pdf": "6aa40a3a9a7665fe5a0b11497774563b98cd176ee25b290c51987bc7b7d62c2e",
+    "paper/main.tex": "b2514a94bc4ef21246f60c82f649ee128c5f1ba0693954c2b203208adf43bf6b",
+    "paper/manuscript.pdf": "90e0abdb953ccfb989319f700928cd924b9adfd5bb4007526a059f93108082c0",
+    "requirements.txt": "55af5111c70e587ae9338679155647087d7a86ac5c60aae03723d200fd6dce2a",
     "results/all_test_metrics.csv": "3a02cf65605069f624b2101d29edda5f755b6f4636bfa6b92432b7c0890f5b49",
     "results/estimator_environment.json": "e77029d207141cf86f767ec16a85024a2d68cf5153d288531e8c0784f875c1fc",
     "results/paired_comparisons.csv": "d4e23162b5ef5ddf6b5fc77b2757f4edd882023ab0d9e48da9dcd5720e0ae7f2",
@@ -218,5 +226,12 @@
     "tests/test_contracts.py": "9839de5e9bc3b7a3176b9f10057944dca156995c388f1151f0efa793650f8de3"
   },
   "raw_source_members_excluded": true,
-  "manuscripts_excluded": true
+  "unapproved_manuscripts_excluded": true,
+  "approved_independent_paper_files": [
+    "paper/images/early-elimination-audit.pdf",
+    "paper/images/paired-test-loss.pdf",
+    "paper/images/resource-accounting.pdf",
+    "paper/main.tex",
+    "paper/manuscript.pdf"
+  ]
 }

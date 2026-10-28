@@ -19,4 +19,4 @@ Source profiling reveals an important scope limitation: the bounded Zurich panel
 
 Method context: [Li et al., Hyperband, JMLR18(185),2018](https://jmlr.org/papers/v18/16-558.html); [scikit-learn1.7 search documentation](https://scikit-learn.org/1.7/modules/grid_search.html). Random search, halving and finite-budget selection are established. This original experiment uses a declared cold-fit iteration ledger and a separate full-pool validation audit. It is not a full Hyperband implementation or a new optimizer.
 
-Raw ARFF files remain local and ignored to keep the repository bounded. Eligible derived panels, metadata, original code and derived numerical evidence are public. Source papers and private unpublished manuscript drafts are excluded.
+Raw ARFF files remain local and ignored to keep the repository bounded. Eligible derived panels, metadata, original code and derived numerical evidence are public. Source papers remain excluded. The independent research manuscript is shared in the paper directory and has not been peer reviewed.

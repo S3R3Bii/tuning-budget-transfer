@@ -1,0 +1,13 @@
+{
+  "scope": "independent-program-study",
+  "study_id": "46",
+  "formal_submission_target": false,
+  "authorization": "Owner explicitly authorized GitHub publication of these study manuscripts on 28 October 2026; formal-publication projects including Azure optimization remain excluded.",
+  "public_files": {
+    "paper/main.tex": "b2514a94bc4ef21246f60c82f649ee128c5f1ba0693954c2b203208adf43bf6b",
+    "paper/manuscript.pdf": "90e0abdb953ccfb989319f700928cd924b9adfd5bb4007526a059f93108082c0",
+    "paper/images/paired-test-loss.pdf": "617805f884eeab66ed2f53456beeaad7c78e3f8ce416608de9220f7026c84b07",
+    "paper/images/early-elimination-audit.pdf": "b34de2dff7d3dbcd9c67c4e89190a33ceb99263070653bbde9063218f7ec12e8",
+    "paper/images/resource-accounting.pdf": "6aa40a3a9a7665fe5a0b11497774563b98cd176ee25b290c51987bc7b7d62c2e"
+  }
+}

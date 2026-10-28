@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "paired_rows_checked": 24,
+  "exported_test_metric_rows_checked": 72,
+  "dataset_summaries_checked": 4,
+  "seed_runs_are_overlapping_not_independent": true
+}

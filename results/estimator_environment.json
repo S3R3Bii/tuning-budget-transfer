@@ -1,0 +1,65 @@
+{
+  "scope": "Constructor settings reconstructed from the pinned method implementation; inherited defaults are library defaults, not tuned claims. Each trial supplies its own four candidate fields, seed and requested iterations.",
+  "python": "3.10.11",
+  "packages": {
+    "numpy": "2.2.5",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.0"
+  },
+  "example_full_constructor": {
+    "categorical_features": "from_dtype",
+    "early_stopping": false,
+    "interaction_cst": null,
+    "l2_regularization": 1,
+    "learning_rate": 0.1,
+    "loss": "squared_error",
+    "max_bins": 64,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 90,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 10,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "quantile": null,
+    "random_state": 110,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "candidate_fields": [
+    "learning_rate",
+    "max_leaf_nodes",
+    "l2_regularization",
+    "min_samples_leaf"
+  ],
+  "resource_field": "max_iter",
+  "fixed_explicit_fields": [
+    "loss",
+    "max_bins",
+    "max_depth",
+    "early_stopping",
+    "random_state"
+  ],
+  "inherited_defaults": "Remaining constructor fields; source:installed scikit-learn1.7.0 official package. No invented optimization rationale.",
+  "libraries_under_single_thread_context": [
+    {
+      "internal_api": "openblas",
+      "version": "0.3.28",
+      "num_threads": 1
+    },
+    {
+      "internal_api": "openmp",
+      "version": null,
+      "num_threads": 1
+    },
+    {
+      "internal_api": "openblas",
+      "version": "0.3.28",
+      "num_threads": 1
+    }
+  ]
+}

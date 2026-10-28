@@ -423,8 +423,96 @@ def verify_runs(phase, role):
     )
 
 
+def verify_summary():
+    manifest = json.loads((ROOT / "data/manifest.json").read_text())
+    paired = pd.read_csv(
+        ROOT / "results/paired_comparisons.csv", float_precision="round_trip"
+    )
+    exported = pd.read_csv(
+        ROOT / "results/all_test_metrics.csv", float_precision="round_trip"
+    )
+    summary = json.loads((ROOT / "results/summary.json").read_text())["datasets"]
+    assert len(paired) == 24 and len(exported) == 72 and len(summary) == 4
+    expected = {}
+    for record in manifest:
+        diffs = []
+        nmse = {name: [] for name in ["random", "halving", "mean"]}
+        survives = [0, 0]
+        for seed in SEEDS:
+            folder = ROOT / f'results/runs/{record["id"]}/{seed}'
+            metrics = json.loads((folder / "test_metrics.json").read_text())["metrics"]
+            lookup = {m["strategy"]: m for m in metrics}
+            selection = json.loads((folder / "selection.json").read_text())
+            audit = json.loads((folder / "audit.json").read_text())
+            row = paired.loc[(paired.dataset == record["id"]) & (paired.seed == seed)]
+            assert len(row) == 1
+            row = row.iloc[0]
+            assert row.role == record["role"] and row["name"] == record["name"]
+            diff = (
+                lookup["halving"]["normalized_mse"] - lookup["random"]["normalized_mse"]
+            )
+            close(row.halving_minus_random_nmse, diff)
+            close(
+                row.halving_minus_random_mse,
+                lookup["halving"]["mse"] - lookup["random"]["mse"],
+            )
+            diffs.append(diff)
+            for strategy in ["random", "halving", "mean"]:
+                close(row[strategy + "_nmse"], lookup[strategy]["normalized_mse"])
+                nmse[strategy].append(lookup[strategy]["normalized_mse"])
+                table = exported.loc[
+                    (exported.dataset == record["id"])
+                    & (exported.seed == seed)
+                    & (exported.strategy == strategy)
+                ]
+                assert len(table) == 1
+                for key in ["mse", "rmse", "mae", "normalized_mse", "mean_error", "n"]:
+                    close(table.iloc[0][key], lookup[strategy][key])
+            for strategy in ["random", "halving"]:
+                close(
+                    row[strategy + "_search_seconds"],
+                    selection["selections"][strategy]["search_seconds"],
+                )
+                close(row[strategy + "_validation_regret"], audit["regret"][strategy])
+            assert (
+                bool(row.oracle_survives_10) == audit["oracle_survives_10"]
+                and bool(row.oracle_survives_30) == audit["oracle_survives_30"]
+            )
+            close(row.extra_audit_seconds, audit["elapsed_seconds"])
+            survives[0] += audit["oracle_survives_10"]
+            survives[1] += audit["oracle_survives_30"]
+        entry = next(s for s in summary if s["dataset"] == record["id"])
+        assert (
+            entry["seed_runs"] == 6
+            and entry["halving_test_wins"] == sum(d < 0 for d in diffs)
+            and entry["role"] == record["role"]
+        )
+        for key, value in [
+            ("nmse_difference_median", statistics.median(diffs)),
+            ("nmse_difference_min", min(diffs)),
+            ("nmse_difference_max", max(diffs)),
+            ("oracle_survives_10", survives[0]),
+            ("oracle_survives_30", survives[1]),
+        ]:
+            close(entry[key], value)
+        for strategy, values in nmse.items():
+            close(entry["median_" + strategy + "_nmse"], statistics.median(values))
+    save(
+        "verification_summary.json",
+        {
+            "status": "PASS",
+            "paired_rows_checked": 24,
+            "exported_test_metric_rows_checked": 72,
+            "dataset_summaries_checked": 4,
+            "seed_runs_are_overlapping_not_independent": True,
+        },
+    )
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "source":
         source_check()
+    elif sys.argv[1] == "summary":
+        verify_summary()
     else:
         verify_runs(sys.argv[1], sys.argv[2])

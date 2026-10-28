@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "dataset": 44140,
+      "seed": 110,
+      "validation_predictions": 62250,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3549,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44140,
+      "seed": 211,
+      "validation_predictions": 58000,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3684,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44140,
+      "seed": 312,
+      "validation_predictions": 60350,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3612,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44140,
+      "seed": 413,
+      "validation_predictions": 61400,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3528,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44140,
+      "seed": 514,
+      "validation_predictions": 56650,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3819,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44140,
+      "seed": 615,
+      "validation_predictions": 58350,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3639,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 110,
+      "validation_predictions": 59050,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3549,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 211,
+      "validation_predictions": 58950,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3732,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 312,
+      "validation_predictions": 59200,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3474,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 413,
+      "validation_predictions": 60850,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3750,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 514,
+      "validation_predictions": 60000,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3618,
+      "independent_test_metrics": 3
+    },
+    {
+      "dataset": 44144,
+      "seed": 615,
+      "validation_predictions": 59700,
+      "trials": 50,
+      "search_iterations_each": 540,
+      "extra_audit_iterations": 1620,
+      "splits_sql": "PASS",
+      "promotions_and_selection": "PASS",
+      "test_predictions": 3714,
+      "independent_test_metrics": 3
+    }
+  ],
+  "scope": "All exported arithmetic, source/group/split identities, resource ledgers and frozen selectors independently checked; no training metric helpers imported."
+}

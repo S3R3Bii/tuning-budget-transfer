@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "datasets": [
+    {
+      "dataset": 44140,
+      "panel_rows": 6000,
+      "feature_groups": 5655,
+      "panel_and_metadata_hashes": "PASS",
+      "raw_independent_reconciliation": "PASS: independent streaming CSV/struct parser, every source row, deduplication, hash-cap group selection and included source values",
+      "source_rows_checked": 53940
+    },
+    {
+      "dataset": 44144,
+      "panel_rows": 6000,
+      "feature_groups": 6000,
+      "panel_and_metadata_hashes": "PASS",
+      "raw_independent_reconciliation": "PASS: independent streaming CSV/struct parser, every source row, deduplication, hash-cap group selection and included source values",
+      "source_rows_checked": 21613
+    },
+    {
+      "dataset": 44148,
+      "panel_rows": 6000,
+      "feature_groups": 4154,
+      "panel_and_metadata_hashes": "PASS",
+      "raw_independent_reconciliation": "PASS: independent streaming CSV/struct parser, every source row, deduplication, hash-cap group selection and included source values",
+      "source_rows_checked": 21263
+    },
+    {
+      "dataset": 45034,
+      "panel_rows": 5911,
+      "feature_groups": 19,
+      "panel_and_metadata_hashes": "PASS",
+      "raw_independent_reconciliation": "PASS: independent streaming CSV/struct parser, every source row, deduplication, hash-cap group selection and included source values",
+      "source_rows_checked": 5465575
+    }
+  ],
+  "scope": "Raw reconciliation runs when original files are present; offline checkouts verify frozen panel/metadata bytes and feature signatures."
+}

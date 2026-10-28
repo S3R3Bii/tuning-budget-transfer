@@ -1,0 +1,50 @@
+{
+  "status": "PASS_BOUNDED_SOURCE_PANEL",
+  "datasets": {
+    "44140": {
+      "source_rows": 53940,
+      "finite_target_rows": 53940,
+      "exact_full_row_duplicates_removed": 208,
+      "eligible_distinct_rows": 53732,
+      "selected_rows": 6000,
+      "selected_feature_groups": 5655,
+      "selected_feature_missing_values": 0,
+      "feature_count": 6,
+      "excluded_attributes": []
+    },
+    "44144": {
+      "source_rows": 21613,
+      "finite_target_rows": 21613,
+      "exact_full_row_duplicates_removed": 0,
+      "eligible_distinct_rows": 21613,
+      "selected_rows": 6000,
+      "selected_feature_groups": 6000,
+      "selected_feature_missing_values": 0,
+      "feature_count": 15,
+      "excluded_attributes": []
+    },
+    "44148": {
+      "source_rows": 21263,
+      "finite_target_rows": 21263,
+      "exact_full_row_duplicates_removed": 66,
+      "eligible_distinct_rows": 21197,
+      "selected_rows": 6000,
+      "selected_feature_groups": 4154,
+      "selected_feature_missing_values": 0,
+      "feature_count": 79,
+      "excluded_attributes": []
+    },
+    "45034": {
+      "source_rows": 5465575,
+      "finite_target_rows": 5465575,
+      "exact_full_row_duplicates_removed": 4415135,
+      "eligible_distinct_rows": 1050440,
+      "selected_rows": 5911,
+      "selected_feature_groups": 19,
+      "selected_feature_missing_values": 0,
+      "feature_count": 8,
+      "excluded_attributes": []
+    }
+  },
+  "scope": "Benchmark-transformed numerical targets; feature-grouped random partitions do not establish time/entity deployment transfer"
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-10-28T20:45:01.180535+00:00",
+  "status": "LOCAL_PASS_EXACT_HEAD_LINUX_PENDING",
+  "acceptance": {
+    "source_rights_and_identity": "PASS:4exact active source versions, explicit terms, independent streaming reconciliation of5,562,391rows",
+    "optimization": "PASS:36-setting space,18 shared candidates,all1,200 trial rows,540requested iterations per search and1620extra audit iterations per split",
+    "metrics_and_splits": "PASS:independent1,565,550validation and81,813test predictions; SQL group separation;72final metrics and24paired summaries",
+    "contracts": "PASS:6contracts including held-target isolation, failures and overwrite protection",
+    "fresh_replay": "PASS:all24runs refitted,all1,200trial losses/selectors and72final metrics reproduced;124.913seconds actual end-to-end scope declared",
+    "presentation": "PASS:three actual figures and seven-page private PDF inspected; low-contrast bar annotation corrected",
+    "privacy": "PASS:bounded intended-file/decompressed-text scan; separate source and figure/PDF review; no universal secret-detection claim",
+    "clean_linux": "unknown until exact proposed revision passes",
+    "novelty_scope": "No new algorithm/global optimum/exhaustive novelty claim; small empirical contribution only"
+  },
+  "grades": {
+    "source_and_correctness": 4,
+    "optimization_evidence": 4,
+    "independent_checks": 4,
+    "local_reproducibility": 4,
+    "decision_communication": 4,
+    "rendered_presentation": 4,
+    "privacy": 4,
+    "clean_linux": "unknown"
+  },
+  "material_limits": [
+    "Zurich19predictor groups,2-5per test seed",
+    "Overlapping seeds; no independent population confidence intervals",
+    "Original-unit correspondence unverified",
+    "Iterations do not match wall time/FLOPs; extra audit charged separately",
+    "No tested warm-start or altered-rung counterfactual"
+  ],
+  "review": {
+    "substantive_local_rounds": 2,
+    "default_caps": "3rounds/45active-review minutes/60review tools; execution separate",
+    "workload_proxy": "Protocol/source/method commits and visible check receipts retained; no task billing estimate. Final exact-head Linux round remains.",
+    "usage": {
+      "source": "Codex get_usage_limits",
+      "window_minutes": 10080,
+      "used_percent": 34,
+      "remaining_percent": 66,
+      "resets_at": 1793782197,
+      "shared_account": true,
+      "other_windows": "unavailable"
+    }
+  },
+  "stop_reason": "Continue exact-head publication checks; no completion-count increment yet"
+}

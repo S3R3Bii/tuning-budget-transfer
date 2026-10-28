@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "search_audit_trial_rows_refitted": 1200,
+  "dataset_seed_runs": 24,
+  "final_metric_rows_reproduced": 72,
+  "absolute_tolerance": 1e-07,
+  "relative_tolerance": 1e-09,
+  "end_to_end_replay_seconds": 124.91263000003528,
+  "timing_scope": "Fresh directory source-panel checks, every cold search/audit/refit, independent checks, comparison and figures; excludes raw retrieval, dependency install and private paper. Per-fit timings are not equality targets.",
+  "commands": [
+    {
+      "script": "verify.py",
+      "arguments": [
+        "source"
+      ],
+      "elapsed_seconds": 0.863504400011152,
+      "exit_code": 0
+    },
+    {
+      "script": "experiment.py",
+      "arguments": [
+        "search",
+        "development"
+      ],
+      "elapsed_seconds": 34.968899800034706,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "arguments": [
+        "search",
+        "development"
+      ],
+      "elapsed_seconds": 6.626272899971809,
+      "exit_code": 0
+    },
+    {
+      "script": "experiment.py",
+      "arguments": [
+        "test",
+        "development"
+      ],
+      "elapsed_seconds": 5.021919900027569,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "arguments": [
+        "test",
+        "development"
+      ],
+      "elapsed_seconds": 6.607734300021548,
+      "exit_code": 0
+    },
+    {
+      "script": "experiment.py",
+      "arguments": [
+        "search",
+        "held_dataset"
+      ],
+      "elapsed_seconds": 47.809710400004406,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "arguments": [
+        "search",
+        "held_dataset"
+      ],
+      "elapsed_seconds": 7.026009100023657,
+      "exit_code": 0
+    },
+    {
+      "script": "experiment.py",
+      "arguments": [
+        "test",
+        "held_dataset"
+      ],
+      "elapsed_seconds": 6.8327065000194125,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "arguments": [
+        "test",
+        "held_dataset"
+      ],
+      "elapsed_seconds": 6.910984200017992,
+      "exit_code": 0
+    },
+    {
+      "script": "verify.py",
+      "arguments": [
+        "summary"
+      ],
+      "elapsed_seconds": 0.5806996999890544,
+      "exit_code": 0
+    },
+    {
+      "script": "figures.py",
+      "arguments": [],
+      "elapsed_seconds": 1.5999243999831378,
+      "exit_code": 0
+    }
+  ]
+}

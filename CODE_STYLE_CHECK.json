@@ -3,6 +3,11 @@
   "semantic_check": "Exact AST equality",
   "files": [
     {
+      "path": "src/check_reproduction.py",
+      "ast_equivalent": true,
+      "sha256": "9493508ec585163f35860d122154bb8e84b1b1f49f01f12c9afc87ab1561acc0"
+    },
+    {
       "path": "src/experiment.py",
       "ast_equivalent": true,
       "sha256": "778f43353a803ae1bfd91da9a7322281fddbca200b78dfb4412167ceb5873eff"
@@ -13,9 +18,14 @@
       "sha256": "3e9caff3f0b3f87e7b95fbcccfccfba5592934d10f69c83bcdd48d0c21f7fffc"
     },
     {
+      "path": "src/figures.py",
+      "ast_equivalent": true,
+      "sha256": "d3fa039000a80dd8ff05d0d4b9ab0508625b60da6b0207c56a87bc777efa5b82"
+    },
+    {
       "path": "src/verify.py",
       "ast_equivalent": true,
-      "sha256": "e89a64e94796287fdc81c2a1b3d470cf582783eda278eb9d3257b6273401d49c"
+      "sha256": "0b7bf0376520ffea66b7e8a5699c0bbf7e3383ced95b8449c97f871fcfe54aff"
     },
     {
       "path": "tests/test_contracts.py",

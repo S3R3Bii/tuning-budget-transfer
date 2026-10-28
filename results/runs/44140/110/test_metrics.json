@@ -1,0 +1,63 @@
+{
+  "evaluated_utc": "2026-10-28T20:33:48.124945+00:00",
+  "metrics": [
+    {
+      "dataset": 44140,
+      "seed": 110,
+      "role": "development",
+      "strategy": "random",
+      "candidate": "lr0.1_leaf31_l21_min30",
+      "outer_train_n": 4817,
+      "outer_train_variance": 1.0240882216202358,
+      "target_center": 7.811807076822249,
+      "target_scale": 1.0119724411367317,
+      "actual_iterations": 90,
+      "elapsed_seconds": 1.3609283999539912,
+      "n": 1183,
+      "mse": 0.05706088265725014,
+      "rmse": 0.23887419839164326,
+      "mae": 0.1891110198149431,
+      "mean_error": -0.003925606187196697,
+      "normalized_mse": 0.05571871783367714
+    },
+    {
+      "dataset": 44140,
+      "seed": 110,
+      "role": "development",
+      "strategy": "halving",
+      "candidate": "lr0.3_leaf7_l20_min30",
+      "outer_train_n": 4817,
+      "outer_train_variance": 1.0240882216202358,
+      "target_center": 7.811807076822249,
+      "target_scale": 1.0119724411367317,
+      "actual_iterations": 90,
+      "elapsed_seconds": 0.03799780004192144,
+      "n": 1183,
+      "mse": 0.05713831756890647,
+      "rmse": 0.23903622647813547,
+      "mae": 0.18985770708791597,
+      "mean_error": -0.0038395481402163875,
+      "normalized_mse": 0.05579433135019022
+    },
+    {
+      "dataset": 44140,
+      "seed": 110,
+      "role": "development",
+      "strategy": "mean",
+      "candidate": "outer_training_mean",
+      "outer_train_n": 4817,
+      "outer_train_variance": 1.0240882216202358,
+      "elapsed_seconds": 0.0,
+      "target_center": 7.811807076822249,
+      "target_scale": 1.0119724411367317,
+      "actual_iterations": 0,
+      "n": 1183,
+      "mse": 1.0130819079590525,
+      "rmse": 1.0065197007307172,
+      "mae": 0.8650888538986848,
+      "mean_error": -0.005313733721274182,
+      "normalized_mse": 0.9892525727483029
+    }
+  ],
+  "refit_and_prediction_seconds": 1.42529739998281
+}

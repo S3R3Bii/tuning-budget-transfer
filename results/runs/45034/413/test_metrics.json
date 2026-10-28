@@ -1,0 +1,63 @@
+{
+  "evaluated_utc": "2026-10-28T20:36:56.549083+00:00",
+  "metrics": [
+    {
+      "dataset": 45034,
+      "seed": 413,
+      "role": "held_dataset",
+      "strategy": "random",
+      "candidate": "lr0.03_leaf31_l21_min10",
+      "outer_train_n": 5120,
+      "outer_train_variance": 13.228569896020195,
+      "target_center": 2.7238659827971494,
+      "target_scale": 3.6371101022680348,
+      "actual_iterations": 90,
+      "elapsed_seconds": 0.05917510000290349,
+      "n": 791,
+      "mse": 14.017184255663059,
+      "rmse": 3.7439530253013404,
+      "mae": 2.796634764678564,
+      "mean_error": 0.9991231910613793,
+      "normalized_mse": 1.0596144833373196
+    },
+    {
+      "dataset": 45034,
+      "seed": 413,
+      "role": "held_dataset",
+      "strategy": "halving",
+      "candidate": "lr0.03_leaf15_l21_min30",
+      "outer_train_n": 5120,
+      "outer_train_variance": 13.228569896020195,
+      "target_center": 2.7238659827971494,
+      "target_scale": 3.6371101022680348,
+      "actual_iterations": 90,
+      "elapsed_seconds": 0.05564589996356517,
+      "n": 791,
+      "mse": 14.017184255663059,
+      "rmse": 3.7439530253013404,
+      "mae": 2.796634764678564,
+      "mean_error": 0.9991231910613793,
+      "normalized_mse": 1.0596144833373196
+    },
+    {
+      "dataset": 45034,
+      "seed": 413,
+      "role": "held_dataset",
+      "strategy": "mean",
+      "candidate": "outer_training_mean",
+      "outer_train_n": 5120,
+      "outer_train_variance": 13.228569896020195,
+      "elapsed_seconds": 0.0,
+      "target_center": 2.7238659827971494,
+      "target_scale": 3.6371101022680348,
+      "actual_iterations": 0,
+      "n": 791,
+      "mse": 13.240314004514662,
+      "rmse": 3.6387242275988245,
+      "mae": 2.960717291311278,
+      "mean_error": 0.47050706665073266,
+      "normalized_mse": 1.0008877836823464
+    }
+  ],
+  "refit_and_prediction_seconds": 0.1279785999795422
+}

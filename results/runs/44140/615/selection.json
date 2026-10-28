@@ -1,0 +1,176 @@
+{
+  "frozen_utc": "2026-10-28T20:32:45.956938+00:00",
+  "dataset": 44140,
+  "seed": 615,
+  "role": "development",
+  "pool": [
+    {
+      "id": "lr0.03_leaf31_l21_min30",
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.3_leaf7_l20_min10",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 0,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.03_leaf7_l21_min30",
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.1_leaf15_l21_min10",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.3_leaf15_l21_min30",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.1_leaf7_l20_min30",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 0,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.3_leaf31_l21_min10",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.03_leaf7_l21_min10",
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.03_leaf15_l21_min10",
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.1_leaf15_l20_min30",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 0,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.1_leaf15_l21_min30",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.3_leaf15_l20_min30",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 0,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.3_leaf7_l21_min30",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.03_leaf31_l21_min10",
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.1_leaf7_l20_min10",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 0,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.1_leaf7_l21_min10",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "lr0.3_leaf31_l21_min30",
+      "learning_rate": 0.3,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 1,
+      "min_samples_leaf": 30
+    },
+    {
+      "id": "lr0.1_leaf31_l20_min30",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 31,
+      "l2_regularization": 0,
+      "min_samples_leaf": 30
+    }
+  ],
+  "strategy_order": [
+    "halving",
+    "random"
+  ],
+  "partition_counts": {
+    "fit": 3620,
+    "test": 1213,
+    "validation": 1167
+  },
+  "fit_target_variance": 1.0106017471436337,
+  "selections": {
+    "halving": {
+      "candidate": "lr0.3_leaf7_l21_min30",
+      "config": {
+        "id": "lr0.3_leaf7_l21_min30",
+        "learning_rate": 0.3,
+        "max_leaf_nodes": 7,
+        "l2_regularization": 1,
+        "min_samples_leaf": 30
+      },
+      "validation_mse": 0.059281553750185116,
+      "search_requested_iterations": 540,
+      "search_actual_iterations": 540,
+      "search_seconds": 0.5222113000345416
+    },
+    "random": {
+      "candidate": "lr0.1_leaf7_l20_min30",
+      "config": {
+        "id": "lr0.1_leaf7_l20_min30",
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 7,
+        "l2_regularization": 0,
+        "min_samples_leaf": 30
+      },
+      "validation_mse": 0.058035274052637115,
+      "search_requested_iterations": 540,
+      "search_actual_iterations": 540,
+      "search_seconds": 0.3031605999567546
+    }
+  },
+  "test_evaluated": false,
+  "audit_used_for_selection": false
+}

@@ -1,0 +1,14 @@
+{
+  "oracle_candidate": "lr0.1_leaf15_l20_min10",
+  "oracle_validation_mse": 0.0345568234669825,
+  "oracle_survives_10": false,
+  "oracle_survives_30": false,
+  "requested_iterations": 1620,
+  "actual_iterations": 1620,
+  "elapsed_seconds": 1.3072451000916772,
+  "scope": "Extra research computation outside both search budgets; never changes frozen selection",
+  "regret": {
+    "halving": 0.001770877539355141,
+    "random": 0.0010166359559256322
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "datasets": [
+    {
+      "dataset": 44140,
+      "name": "diamonds",
+      "role": "development",
+      "seed_runs": 6,
+      "halving_test_wins": 3,
+      "nmse_difference_median": 6.393193573317468e-06,
+      "nmse_difference_min": -0.005676337080294039,
+      "nmse_difference_max": 0.002035632890212802,
+      "oracle_survives_10": 1,
+      "oracle_survives_30": 0,
+      "median_random_nmse": 0.06008477999563143,
+      "median_halving_nmse": 0.05776980557958346,
+      "median_mean_nmse": 1.0006972733471493
+    },
+    {
+      "dataset": 44144,
+      "name": "house_sales",
+      "role": "development",
+      "seed_runs": 6,
+      "halving_test_wins": 1,
+      "nmse_difference_median": 0.006600584568520092,
+      "nmse_difference_min": -0.00869540350822215,
+      "nmse_difference_max": 0.018420029237191396,
+      "oracle_survives_10": 2,
+      "oracle_survives_30": 0,
+      "median_random_nmse": 0.12470346034404223,
+      "median_halving_nmse": 0.12863597341850366,
+      "median_mean_nmse": 0.9830505651773197
+    },
+    {
+      "dataset": 44148,
+      "name": "superconduct",
+      "role": "held_dataset",
+      "seed_runs": 6,
+      "halving_test_wins": 3,
+      "nmse_difference_median": -0.0029336602557621105,
+      "nmse_difference_min": -0.02659392252676826,
+      "nmse_difference_max": 0.009684867625281382,
+      "oracle_survives_10": 3,
+      "oracle_survives_30": 2,
+      "median_random_nmse": 0.1320072247418706,
+      "median_halving_nmse": 0.12948395374734234,
+      "median_mean_nmse": 0.9916069544107398
+    },
+    {
+      "dataset": 45034,
+      "name": "delays_zurich_transport",
+      "role": "held_dataset",
+      "seed_runs": 6,
+      "halving_test_wins": 3,
+      "nmse_difference_median": -4.126302116275182e-05,
+      "nmse_difference_min": -0.011987862297769158,
+      "nmse_difference_max": 0.006194070718587463,
+      "oracle_survives_10": 3,
+      "oracle_survives_30": 2,
+      "median_random_nmse": 1.0343870587541515,
+      "median_halving_nmse": 1.0363783886438473,
+      "median_mean_nmse": 1.0008691237991392
+    }
+  ],
+  "scope": "Conditional overlapping-seed benchmark comparisons, not independent confidence intervals or universal search-strategy superiority"
+}
